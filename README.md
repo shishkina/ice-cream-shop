@@ -10,8 +10,8 @@
 ### IN THIS REPOSITORY ARE THE FOLLOWING THINGS!
 
 - This beautiful readme ✨
-- An ice cream API, built with Express (`icecream-begin`)
-- That same ice cream API, this time with a React frontend (`icecream-final`)
+- An ice cream API, built with Express (`icecream-app-begin`)
+- That same ice cream API, this time with a React frontend (`icecream-app-final`)
 
 ### WE'RE GONNA DO SOME THINGS!
 
@@ -23,7 +23,7 @@
 # Step 0: Setting up your environment
 
 - We're using **`yarn`**, not `npm`, for this project, so make sure you have `yarn` installed globally. `npm install -g yarn`
-- Within the Express app `icecream-begin` run `yarn install` (NOT `npm install!!`)
+- Within the Express app `icecream-app-begin` run `yarn install` (NOT `npm install!!`)
     - Sidebar: It's best during a project to only use one or the other. This project was initialized using `yarn`, so we need to run `yarn install` to install the dependencies.
 - Create a database `icecream_dev` in psql
 - Run the migration and the seed file (`icecream.sql`) using `psql -d icecream_dev -f`.
@@ -174,7 +174,7 @@ export default Footer;
 
 ## 🚀 LAB!
 
-Get your `icecream-begin` app to look like the one we've been working on!
+Get your `icecream-app-begin` app to look like the one we've been working on!
 
 # Step 2: Create our `Home`, `IceCreamController`, `IceCreamList`, and `IceCream` components.
 
@@ -440,7 +440,7 @@ We're including `Link` from `react-router-dom` so that we can link to the indivi
 
 ## 🚀 LAB!
 
-Get your `icecream-begin` app to look like the one we've been working on!
+Get your `icecream-app-begin` app to look like the one we've been working on!
 
 Refer back to the code in the lecture notes if you get stuck 😉
 
@@ -607,7 +607,7 @@ export default IceCreamSingle;
 
 ## 🚀 LAB!
 
-Get your `icecream-begin` app to look like the one we've been working on!
+Get your `icecream-app-begin` app to look like the one we've been working on!
 
 Refer back to the code in the lecture notes if you get stuck 😉
 
@@ -894,7 +894,7 @@ Since we have everything we need in state, we don't need to individually pull ou
 
 ## 🚀 LAB!
 
-Get your `icecream-begin` app to look like the one we've been working on!
+Get your `icecream-app-begin` app to look like the one we've been working on!
 
 Refer back to the code in the lecture notes if you get stuck 😉
 
@@ -1172,7 +1172,7 @@ And, depending on whether or not it's an add form, we're changing what the submi
 
 ## 🚀 LAB!
 
-Get your `icecream-begin` app to look like the one we've been working on!
+Get your `icecream-app-begin` app to look like the one we've been working on!
 
 Refer back to the code in the lecture notes if you get stuck 😉
 
@@ -1215,7 +1215,7 @@ Right underneath the `edit` link:
 
 ## 🚀 LAST LAB!
 
-Get your `icecream-begin` app to look like the one we've been working on! At this point, it should look like the final version.
+Get your `icecream-app-begin` app to look like the one we've been working on! At this point, it should look like the final version.
 
 Refer back to the code in the lecture notes if you get stuck 😉
 
