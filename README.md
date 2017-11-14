@@ -46,6 +46,7 @@ Now we should have an Express app and a React app running at the same time!
 - Within the React app, create a `src/components` folder. Then, create the following components (right now, we're just going to work on `Header` and `Footer`:
     - Header
     - Footer
+    - IceCreamController
     - IceCreamList
     - IceCream
     - IceCreamSingle
