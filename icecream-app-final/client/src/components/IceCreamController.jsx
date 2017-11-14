@@ -16,6 +16,7 @@ class IceCreamController extends Component {
       allIceCreams: null,
       currentIceCream: null,
       fireRedirect: false,
+      redirectPath: null,
     }
     this.iceCreamSubmit = this.iceCreamSubmit.bind(this);
     this.iceCreamDelete = this.iceCreamDelete.bind(this);
