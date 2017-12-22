@@ -9,8 +9,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
@@ -21,7 +21,7 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
@@ -45,6 +45,11 @@ table {
   border-spacing: 0;
 }
 
+input[type="text"] {
+    background: transparent;
+    border: none;
+}
+
 input[type="submit"],
 input[type=password],
 input[type="reset"],
@@ -61,6 +66,7 @@ button {
     -webkit-appearance: button; /* for input */
     cursor: pointer;
 }
+
 input::-moz-focus-inner,
 button::-moz-focus-inner {
     border: 0;
@@ -156,7 +162,7 @@ header nav ul li a:hover {
   border-bottom: 1px solid black;
 }
 
-header .logo {
+header .logo{
   font-weight: 800;
   font-style: italic;
 }
@@ -330,7 +336,7 @@ form input[type=email]:focus, form input[type=password]:focus {
   outline: 0;
 }
 
-.add form input[type=submit], .edit form input[type=submit], 
+.add form input[type=submit], .edit form input[type=submit],
 .login form input[type=submit], .register form input[type=submit]  {
   background-color: #000;
   display: block;
