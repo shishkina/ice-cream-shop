@@ -1,0 +1,4 @@
+extends: airbnb-base
+rules:
+  arrow-parens: 0
+  key-spacing:  0
