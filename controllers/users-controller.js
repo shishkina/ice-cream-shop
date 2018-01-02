@@ -12,7 +12,7 @@ module.exports = {
     })
       .then(user => {
         req.login(user, (err) => {
-          if (err) next(err);
+          if (err) console.log(err, 'this is error');
           res.json({
             message: 'user created successfully',
             auth: true,
