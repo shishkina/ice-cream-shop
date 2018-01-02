@@ -31,8 +31,7 @@ class IceCreamController extends Component {
             allIceCreams: res.data.icecreams,
             dataLoaded: true,
           });
-        })
-        .catch(err => console.log(err));
+        }).catch(err => console.log(err));
     } else if (this.state.currentPage === 'show' || this.state.currentPage === 'edit') {
       fetch(`/api/icecream/${this.state.currentId}`)
         .then(res => res.json())
@@ -41,8 +40,7 @@ class IceCreamController extends Component {
             currentIceCream: res.data.icecream,
             dataLoaded: true,
           })
-        })
-        .catch(err => console.log(err));
+        }).catch(err => console.log(err));
     } else if (this.state.currentPage === 'new') {
       this.setState({
         dataLoaded: true,

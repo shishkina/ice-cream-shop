@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import Router from './components/RouterComponent';
-import Error from './components/Error';
 
 class App extends Component {
   constructor() {
@@ -24,13 +23,7 @@ class App extends Component {
           user: res.data.user,
         })
       })
-      .catch(err => {
-        console.log(err);
-        this.setState({
-          error: err,
-          message: 'You need to log in to proceed',
-        })
-      });
+      .catch(err => console.log(err));
   }
 
   handleLoginSubmit(e, data) {
@@ -50,13 +43,7 @@ class App extends Component {
         user: res.data.user,
       })
     })
-    .catch(err => {
-      console.log(err, 'thsis is error');
-      this.setState({
-        error: err,
-        message: 'Wrong credentials!',
-      })
-    });
+    .catch(err => console.log(err));
   }
   handleRegisterSubmit(e, data){
     e.preventDefault();
@@ -76,13 +63,7 @@ class App extends Component {
         user: res.data.user,
       })
     })
-    .catch(err => {
-      this.setState({
-        error: err,
-        message: 'OOoOoOOPS, something went wrong!'
-      })
-
-    });
+    .catch(err => console.log(err));
   }
   logout() {
     fetch(`api/auth/logout`, {
@@ -98,15 +79,12 @@ class App extends Component {
     .catch(err => console.log(err));
   }
   render() {
-    console.log(this.state.error, 'oooops');
-     return (
-       this.state.error ?
-        <Error message={this.state.message}/>
-        : <Router userState={this.state}
-                         handleLoginSubmit={this.handleLoginSubmit}
-                         handleRegisterSubmit={this.handleRegisterSubmit}
-                         logout={this.logout} />
-      )
+    return (
+      <Router userState={this.state}
+              handleLoginSubmit={this.handleLoginSubmit}
+              handleRegisterSubmit={this.handleRegisterSubmit}
+              logout={this.logout} />
+    );
   }
 }
 
